@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <!-- Tailwind and DaisyUI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="w-full px-[60px] py-[24px] sm:px-[30px] sm:py-[12px]">
+
+        <div class="w-full flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+
+            <div class="flex flex-row items-center p-5 gap-3 sm:gap-4">
+                <img src="./assets/logo.png" class="h-[50px] w-[50px]  sm:h-[50px] sm:w-[50px]" alt="">
+                <h1 class=" text-[#006747] font-[800] text-[24px]">Emergency <br class="hidden sm:block">Services</h1>
+            </div>
+
+            <div class="flex flex-row justify-between items-center px-10 sm:w-auto">
+                <div
+                    class="h-[52px] w-[125px] sm:h-[48px] sm:w-[110px] flex flex-row justify-center items-center bg-[#41ff6b1a] rounded-3xl">
+                    <span id="totalHeart" class="font-extrabold">0</span>
+                    <img src="./assets/heart.png" class="h-[30px] w-[30px] ml-4" alt="">
+                </div>
+                <div
+                    class="h-[52px] w-[125px] ml-4 flex flex-row justify-center items-center  bg-[#41ff6b1a] rounded-3xl">
+                    <span class="callPoint font-extrabold">100</span>
+                    <img src="./assets/coin.png" class="h-[30px] w-[30px] ml-4" alt="">
+                </div>
+                <div class="h-[52px] w-[125px] ml-4 flex flex-row justify-center items-center bg-[#00A63c] rounded-3xl">
+                    <p class="copyCount text-white font-[600]"><span>0</span> Copy</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
