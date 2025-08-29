@@ -41,3 +41,33 @@ document.querySelectorAll('.callbtn').forEach(button => {
         document.querySelector('.callHistory').appendChild(div);
     });
 });
+
+// Call function
+document.querySelectorAll('.callbtn').forEach(button => {
+    button.addEventListener("click", () => {
+        const newCallPoint = parseInt(document.getElementsByClassName("callPoint")[0].innerText) - 20;
+
+        if (newCallPoint >= 0) {
+            document.getElementsByClassName("callPoint")[0].innerText = newCallPoint;
+        } else {
+            document.getElementsByClassName("callPoint")[0].innerText = 0;
+        }
+
+        if (newCallPoint > 20) {
+            const callText = button.parentElement.parentElement.querySelector('.CallText').innerText;
+            const Number = button.parentElement.parentElement.querySelector('.copyNum').innerText;
+            alert(`calling... ${callText} - ${Number}`);
+        }
+        else {
+            alert("You have insufficient call points.");
+        }
+    });
+
+
+});
+
+
+// Clear History
+document.getElementById("Clear").addEventListener("click", () => {
+    document.querySelector('.callHistory').innerHTML = "";
+});
